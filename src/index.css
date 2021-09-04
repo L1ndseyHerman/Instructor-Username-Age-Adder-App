@@ -6,6 +6,8 @@ html {
   font-family: sans-serif;
 }
 
+/* Oh hey, he changed this global CSS! :O */
 body {
   margin: 0;
+  background: #1f1f1f;
 }
