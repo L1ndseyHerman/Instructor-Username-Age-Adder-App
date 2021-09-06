@@ -13,11 +13,12 @@ function App() {
     });
   };
 
+  //  In projects where <> doesn't work, do <React.Fragment>, or if u import Fragment, <Fragment>.
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 }
 

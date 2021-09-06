@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Card from '../UI/Card';
 import classes from './AddUser.module.css';
 import Button from '../UI/Button';
+import Wrapper from '../Helpers/Wrapper';
 import ErrorModal from '../UI/ErrorModal';
 
 //  In React JS, need "htmlFor" instead of "for", which is Vanilla way of saying what the label for.
@@ -57,7 +58,7 @@ const AddUser = props => {
     //  addUserHandler = a pointer to that function.
     //  addUserHandler() = executes the function immediately, bad.
     return (
-        <div>
+        <Wrapper>
             {error && (
                 <ErrorModal 
                     title={error.title} 
@@ -74,7 +75,7 @@ const AddUser = props => {
                     <Button type="submit">Add User</Button>
                 </form>
             </Card>
-        </div>
+        </Wrapper>
     );
 };
 
